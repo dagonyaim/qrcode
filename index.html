@@ -1,79 +1,73 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>自由跳动的字体</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1405113</title>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.beattext.js"></script>
-<script type="text/javascript" src="js/easying.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
-<script type="text/javascript">
-
-$(document).ready(function() {
-/*
- *  参数详解:
- *	upTime			上移的时间
- *	downTime		下落的时间
- *	beatHeight		上移高度
- *	isAuth			是否自动
- *	isRotate		是否旋转
-*/
-$('p#beatText').beatText({isAuth:false,isRotate:false});
-$('p#rotateText').beatText({isAuth:false,isRotate:true});
-$('p#autoText').beatText({isAuth:true,beatHeight:"3em",isRotate:false});
-$('p#roloadText').beatText({isAuth:true,beatHeight:"1em",isRotate:false,upTime:100,downTime:100});
-$('p#autoRotateText').beatText({isAuth:true,upTime:700,downTime:700,beatHeight:"3em",isRotate:true});
-
-});
- 
-</script>
-<style>
-*{
-	padding:0px;
-	margin:0px;
-	background:#333;
-	color:#fff;
-	font-size:30px;
-}
-
-.container{
-	margin:50px auto;
-	width:1100px;
-	position:relative;
-}
-.container p{
-	text-align:center;
-	padding:10px auto;
-}
-/*下面两个是核心样式*/
-.beat-char {
-    line-height: 3.4em;
-    position: relative;
-	display: inline-block;
-	background: transparent;
-
-}
-
-.rotate{
-	transform:rotate(360deg) ;
-	-ms-transform:rotate(360deg); 	/* IE 9 */
-	-moz-transform:rotate(360deg); 	/* Firefox */
-	-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
-	-o-transform:rotate(360deg);
-	-webkit-transition-duration: 0.7s;
-
-}
-</style>
 </head>
 <body>
+<div class="demo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="box">
+					<div class="box-img">
+						<img src="images/1.jpg" alt="">
+					</div>
+					
+					<div class="box-content">
+						<h4 class="title">孙雨</h4>
+						<p class="description">你好</p>
+						<ul class="social-links">
+							<li><a href="https://baidu.com" class="fa fa-qq" target="_blank">aa</a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-<div class="container">
-	<p id="beatText">朱煜：</p>
-	<p id="rotateText">胡宗耀：时间过得真的挺快啊，不知不觉间就要毕业了……</p>
-	<p id="autoText">王瑜珩：我的小伙伴儿都牛逼啊，愿你每天快乐似神仙啊</p>
-	<p id="roloadText">龙涵：青春不老 我们不散 感谢你们的陪伴让我四年不孤单</p>
-	<p id="autoRotateText">李艳芳：阳光在天上，谁也挡不住，愿你在我的世界驻留，一直。</p>
+			<div class="col-md-4 col-sm-6">
+				<div class="box">
+					<div class="box-img">
+						<img src="images/1.jpg" alt="">
+					</div><a href="https://baidu.com">
+					<div class="box-content">
+						<h4 class="title">孙雨</h4>
+						<p class="description">你好</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div></a>
+				</div>
+			</div>
+			
+			<div class="col-md-4 col-sm-6">
+				<div class="box">
+					<div class="box-img">
+						<img src="images/1.jpg" alt="">
+					</div><a href="https://baidu.com">
+					<div class="box-content">
+						<h4 class="title">孙雨</h4>
+						<p class="description">你好</p>
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-qq"></a></li>
+							<li><a href="#" class="fa fa-weibo"></a></li>
+							<li><a href="#" class="fa fa-weixin"></a></li>
+						</ul>
+					</div></a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </div>
 </body>
 </html>
